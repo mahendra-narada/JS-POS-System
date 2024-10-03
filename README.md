@@ -15,7 +15,8 @@ This is a small academic project for a Point of Sale (POS) system developed usin
 
 ## Demo
 
-You can view and interact with the project live at the following link: [JS POS System](https://mahendra-narada.github.io/JS-POS-System/).
+You can view and interact with the project live at the following link: [JS POS System](https://mahendra-narada.github.io/JS-POS-System/
+).
 
 ## Getting Started
 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <link rel="stylesheet" href="place_order.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="box">
+            <center> <h1>PLACE ORDER</h1></center>
+        </div>
+        <br>
+        <div class="col" style="display: flex; align-items: center;">
+            <input type="text" id="searchItem" class="form-control" placeholder="Search Item" aria-label="Username" aria-describedby="basic-addon1" style="width: 90%; margin-right: 10px;">
+            <button type="button" id="searchButton" class="btn btn-danger" style="width: 30%;">Search</button>
+        </div>
+
+
+        <div class="col" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+           
+            <label class="label" style="width: 16%; text-align: center;">ORDER ID</label>
+            <label class="label" style="width: 16%; text-align: center;">ITEM ID</label>
+            <label class="label" style="width: 16%; text-align: center;">NAME</label>
+            <label class="label" style="width: 16%; text-align: center;">PRICE</label>
+            <label class="label" style="width: 16%; text-align: center;">DISCOUNT</label>
+            <label class="label" style="width: 16%; text-align: center;">QUANTITY</label>
+        </div>
+    
+        <div class="col" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+            
+            <input type="text" id="orderId" class="form-control" placeholder="ORDER ID" aria-label="ORDER ID" style="width: 16%; margin-bottom: 6px;">
+            <input type="text" id="itemId" class="form-control" placeholder="Item ID" aria-label="Item ID" style="width: 16%; margin-bottom: 6px;">
+            <input type="text" id="itemName" class="form-control" placeholder="NAME" aria-label="NAME" style="width: 16%; margin-bottom: 6px;">
+            <input type="text" id="itemPrice" class="form-control" placeholder="PRICE" aria-label="PRICE" style="width: 16%; margin-bottom: 6px;">
+            <input type="text" id="itemDiscount" class="form-control" placeholder="DISCOUNT" aria-label="DISCOUNT" style="width: 16%; margin-bottom: 6px;">
+            <input type="text" id="itemQuantity" class="form-control" placeholder="QUANTITY" aria-label="QUANTITY" style="width: 16%; margin-bottom: 6px;">
+        </div>
+
+        <button type="button" id="addToCartButton" class="btn btn-danger" style="width: 30%;">+ ADD TO CART</button><BR><BR>
+            <div class="col" style="display: flex; flex-direction: column; gap: 10px;">
+               
+                <div style="display: flex; flex-direction: column;">
+                    <label class="label" style="text-align: left; margin-bottom: 5px;">CUSTOMER NAME:</label>
+                    <input type="text"  id="customerName" class="form-control" aria-label="Customer Name" style="width: 100%;">
+                </div>
+                
+                
+                <div style="display: flex; flex-direction: column;">
+                    <label class="label" style="text-align: left; margin-bottom: 5px;">PHONE NUMBER:</label>
+                    <input type="text" id="telephoneNumber" class="form-control" aria-label="Phone Number" style="width: 100%;">
+                </div>
+                
+                
+                <div style="display: flex; flex-direction: column;">
+                    <label class="label" style="text-align: left; margin-bottom: 5px;">ITEMS:</label>
+                    <input type="text" id="orderItems" class="form-control"  style="width: 100%;">
+                </div>
+                
+                
+                <div style="display: flex; flex-direction: column;">
+                    <label class="label" style="text-align: left; margin-bottom: 5px;">DISCOUNT:</label>
+                    <input type="text" id="orderDiscount" class="form-control" aria-label="Discount" style="width: 100%;">
+                </div>
+                
+                
+                <div style="display: flex; flex-direction: column;">
+                    <label class="label" style="text-align: left; margin-bottom: 5px;">TOTAL:</label>
+                    <input type="text" id="orderTotal"  class="form-control" aria-label="Total" style="width: 100%;">
+                </div>
+            </div>
+
+            <br><br>
+            <div class="col" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                <button type="button"  id="placeOrderButton" class="btn btn-danger" style="width: 50%;">PLACE ORDER</button>
+                <button type="button" id="exitButton" class="btn btn-secondary" style="width: 50%;">EXIT</button>
+            </div>
+            
+        
+
+
+        
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="place_order.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER MENU</title>
+    <link rel="stylesheet" href="item-menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <center> <h1>ITEM MENU</h1></center>
+        </div>
+        <br>
+        <div class="col" style="display: flex; align-items: center;">
+            <input type="text" id="searchItem" onkeyup="filterTable()" class="form-control" placeholder="Search Order" aria-label="Username" aria-describedby="basic-addon1" style="width: 90%; margin-right: 10px;">
+            <button type="button" id="searchButton" class="btn btn-danger" style="width: 30%;">Search</button>
+        </div>
+        <br><br>
+        <div class="table"  style="max-height: 300px; overflow-y: auto;">
+            <table class="table table-hover"  id="itemTable" >
+              
+                <tbody id="itemTableBody">
+                    
+                </tbody>
+              </table>
+        </div>
+
+        <br>
+
+        <div class="col" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+            <div style="width: 16%; text-align: center;">
+                <label class="label">ITEM ID</label>
+                <input type="text" id="input_itemId" class="form-control" placeholder="ITEM ID" aria-label="ITEM ID" style="width: 100%; margin-bottom: 10px;">
+            </div>
+            <div style="width: 16%; text-align: center;">
+                <label class="label">NAME</label>
+                <input type="text" id="input_itemName" class="form-control" placeholder="ITEM NAME" aria-label="NAME" style="width: 100%; margin-bottom: 10px;">
+            </div>
+            <div style="width: 16%; text-align: center;">
+                <label class="label">PRICE</label>
+                <input type="text" id="input_itemPrice" class="form-control" placeholder="PRICE" aria-label="PRICE" style="width: 100%; margin-bottom: 10px;">
+            </div>
+            <div style="width: 16%; text-align: center;">
+                <label class="label">DISCOUNT</label>
+                <input type="text" id="input_itemDiscount"  class="form-control" placeholder="DISCOUNT" aria-label="DISCOUNT" style="width: 100%; margin-bottom: 10px;">
+            </div>
+            <div style="width: 16%; text-align: center;">
+                <label class="label">EXPIRY DATE</label>
+                <input type="date" id="input_expireDate" class="form-control" placeholder="EXPIRY DATE" aria-label="EXPIRY DATE" style="width: 100%; margin-bottom: 10px;">
+                
+        </div>
+       <BR><BR>
+        <div style="display: flex; justify-content: space-between; gap: 10px; width: 100%;">
+            <button type="button"  id="addItemButton" class="btn btn-danger" style="flex: 1;">Add</button>
+            <button type="button"   id="updateItemButton"class="btn btn-danger" style="flex: 1;">Update</button>
+            <button type="button"   id="deleteItemButton" class="btn btn-danger" style="flex: 1;">Delete</button>
+            <button type="button" onclick="window.location.href='index.html'" class="btn btn-danger" style="flex: 1;">Exit</button>
+        </div>
+        
+       
+    </div>
+
+
+    
+    <script src="item-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
